@@ -128,7 +128,7 @@ const Input = ({ className }: { className?: string }) => {
         )}
       </div>
       <textarea
-        className="min-w-[80vw] outline-none bg-gray-200 p-2 field-sizing-content max-h-[150vh] placeholder:text-xl placeholder:opacity-100 border-2 border-b-0 border-t-0 border-dashed"
+        className={`${isDragReject && `border-red-500 border-4`} ${isDragAccept && `border-green-500`} min-w-[80vw] outline-none bg-gray-200 p-2 field-sizing-content max-h-[150vh] placeholder:text-xl placeholder:opacity-100 border-2 border-b-0 border-t-0 border-dashed `}
         placeholder="Or Write Your Text Here"
         onChange={handleTextChange}
       />
@@ -138,7 +138,7 @@ const Input = ({ className }: { className?: string }) => {
         disabled={loading}
         onClick={handleClick}
       >
-        {loading && <Loader className="w-12"/>}
+        {loading && <Loader className="w-12" />}
         {buttonText}
       </button>
     </section>
