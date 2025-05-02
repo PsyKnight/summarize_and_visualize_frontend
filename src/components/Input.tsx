@@ -138,7 +138,7 @@ const Input = ({ className }: { className?: string }) => {
         disabled={loading}
         onClick={handleClick}
       >
-        <Loader className="w-12" />
+        {loading && <Loader className="w-12"/>}
         {buttonText}
       </button>
     </section>
