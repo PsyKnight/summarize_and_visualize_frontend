@@ -31,7 +31,6 @@ This React project allows users to upload documents (PDF, DOCX, TXT), extract th
    Usage
    To start the development server:
 
-    Run:
-       ```bash
-          npm run dev
-       ```
+ ```bash
+    npm run dev
+ ```
