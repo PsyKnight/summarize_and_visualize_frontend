@@ -20,17 +20,18 @@ This React project allows users to upload documents (PDF, DOCX, TXT), extract th
 ## Installation
 
 1. Clone the repository.
-2. Run:
+2. Install necessary packages:
+
    ```bash
    npm install
    ```
 
-Create a .env file using your Hugging Face API key:
-VITE_HUGGINGFACE_API_KEY=your_api_key_here
-Usage
-To start the development server:
+3. Create a .env file using your Hugging Face API key:
+   VITE_HUGGINGFACE_API_KEY=your_api_key_here
+   Usage
+   To start the development server:
 
-Run:
-   ```bash
-      npm install
-   ```
+    Run:
+       ```bash
+          npm run dev
+       ```
