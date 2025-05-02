@@ -36,7 +36,7 @@ ${extractedText}`;
   }
 };
 
-export const getImage = async (summary: string): Promise<Blob | null> => {
+export const getImage = async (summary: string) => {
   try {
     return await client.textToImage({
       provider: "replicate",

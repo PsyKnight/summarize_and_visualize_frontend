@@ -29,7 +29,7 @@ const Summarizer = () => {
           </button>
         )}
       </div>
-      <div className="p-4 bg-gray-300 max-w-[80%] min-w-[80vw] rounded-lg rounded-t-none">
+      <div className="p-4 bg-gray-300 max-w-[80%] min-w-[80vw] rounded-lg rounded-t-none flex items-center justify-center">
         <Markdown>
           {summary
             ? summary

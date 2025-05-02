@@ -79,6 +79,7 @@ const Input = ({ className }: { className?: string }) => {
       const generatedImgBlob = await getImage(generatedSummary);
 
       if (generatedImgBlob) {
+        // @ts-ignore
         const generatedImgUrl = URL.createObjectURL(generatedImgBlob);
         setImgUrl(generatedImgUrl);
       }

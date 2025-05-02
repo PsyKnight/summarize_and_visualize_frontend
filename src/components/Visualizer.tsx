@@ -32,12 +32,14 @@ const Visualizer = () => {
           )}
         </h1>
 
-        <button
-          onClick={copyImageToClipboard}
-          className="border-2 p-2 rounded-lg border-gray-500"
-        >
-          <FaCopy opacity={80} />
-        </button>
+        {imgUrl && (
+          <button
+            onClick={copyImageToClipboard}
+            className="border-2 p-2 rounded-lg border-gray-500"
+          >
+            <FaCopy opacity={80} />
+          </button>
+        )}
       </div>
 
       <div className="p-4 bg-gray-300 max-w-[80%] min-w-[80vw] rounded-lg rounded-t-none flex flex-col items-center justify-center">
