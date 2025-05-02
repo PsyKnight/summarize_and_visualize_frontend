@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# Summarize & Visualize
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React project allows users to upload documents (PDF, DOCX, TXT), extract the text, then generate a summarized version of the text and a related image for visualization. The application uses TypeScript, JavaScript, and various npm packages like `react-dropzone`, `pdfjs-dist`, `mammoth`, & `react-markdown`.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Upload files or enter text manually.
+- Extract text from PDF, DOCX, and TXT files.
+- Summarize the text using a language model from Hugging Face.
+- Generate an image based on the summary.
+- Visualize both the summary and generated image in a responsive UI.
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- TypeScript / JavaScript
+- React
+- Tailwind CSS
+- npm
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone the repository.
+2. Run:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Create a .env file using your Hugging Face API key:
+VITE_HUGGINGFACE_API_KEY=your_api_key_here
+Usage
+To start the development server:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Run:
+   ```bash
+      npm install
+   ```
